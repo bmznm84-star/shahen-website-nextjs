@@ -1,0 +1,33 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RTL defaults */
+:root{
+  --radius: 16px;
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+.container{
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.btn{
+  @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-medium transition shadow-md;
+}
+
+.btn-primary{
+  @apply bg-brand text-white hover:brightness-110;
+}
+.btn-outline{
+  @apply border border-brand text-brand hover:bg-brand hover:text-white;
+}
+
+.card{
+  @apply bg-white rounded-2xl shadow-sm border border-gray-100;
+}
